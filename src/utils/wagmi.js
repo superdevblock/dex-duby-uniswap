@@ -12,7 +12,7 @@ import { SafeConnector } from 'wagmi/connectors/safe'
 import { jsonRpcProvider } from 'wagmi/providers/jsonRpc'
 
 const CHAINS = [
-  // mainnet,
+  mainnet,
   goerli,
   // baseTest,
   // bsc,
@@ -26,7 +26,6 @@ const PUBLIC_NODES = {
   [ChainId.BSC]: 'https://bsc-dataseed1.binance.org',
   [ChainId.BSC_TESTNET]: 'https://data-seed-prebsc-1-s1.binance.org:8545',
   [ChainId.GOERLI]: 'https://eth-goerli.public.blastapi.io',
-  [ChainId.ETHEREUM]: 'https://mainnet.infura.io/v3/',
 }
 
 export const { provider, chains } = configureChains(CHAINS, [
